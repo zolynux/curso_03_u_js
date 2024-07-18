@@ -1,8 +1,8 @@
-### Ciclos en JavaScript
+# Ciclos en JavaScript
 
 Los ciclos (o bucles) en JavaScript se utilizan para repetir un bloque de código mientras se cumpla una condición específica. JavaScript proporciona varios tipos de ciclos para manejar diferentes situaciones: `for`, `while`, `do...while`, y los ciclos especiales para iterar sobre objetos y arrays como `for...in` y `for...of`. A continuación, se explican estos ciclos con ejemplos:
 
-### Ciclo `for`
+## Ciclo `for`
 
 El ciclo `for` se utiliza cuando se conoce de antemano el número de iteraciones que se desea realizar. Su sintaxis general es:
 
@@ -12,7 +12,7 @@ for (inicialización; condición; actualización) {
 }
 ```
 
-#### Ejemplo
+### Ejemplo
 
 ```javascript
 for (let i = 0; i < 5; i++) {
@@ -32,7 +32,7 @@ while (condición) {
 }
 ```
 
-#### Ejemplo
+### Ejemplo
 
 ```javascript
 let i = 0;
@@ -54,7 +54,7 @@ do {
 } while (condición);
 ```
 
-#### Ejemplo
+### Ejemplo
 
 ```javascript
 let i = 0;
@@ -76,7 +76,7 @@ for (let propiedad in objeto) {
 }
 ```
 
-#### Ejemplo
+### Ejemplo
 
 ```javascript
 let persona = { nombre: 'Juan', edad: 30, ciudad: 'Madrid' };
@@ -97,7 +97,7 @@ for (let elemento of iterable) {
 }
 ```
 
-#### Ejemplo
+### Ejemplo
 
 ```javascript
 let numeros = [1, 2, 3, 4, 5];
