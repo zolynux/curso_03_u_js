@@ -15,6 +15,9 @@
   "vim.handleKeys": {
     "<C-d>": false,
     "<C-s>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-b>": false,
     "<C-z>": false
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode"
