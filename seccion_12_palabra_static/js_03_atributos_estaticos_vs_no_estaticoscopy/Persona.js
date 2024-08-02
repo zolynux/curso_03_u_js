@@ -1,10 +1,15 @@
 // Clase Object, Método toString, Sobreescritura y Polimorfismo en JavaScript
-// Parabra Static
 
 class Persona {
+  static contadorObjetosPersona = 0; // Atributo de nuestra clase
+
+  email = "Valor default email"; // Atributo de nuestros objetos
+
   constructor(nombre, apellido) {
     this._nombre = nombre;
     this._apellido = apellido;
+    Persona.contadorPersonas++;
+    console.log(`Se incremento contador: ${contadorObjetosPersona++}`);
   }
 
   get nombre() {
@@ -77,3 +82,10 @@ Persona.saludar2(persona1);
 
 Empleado.saludar();
 Empleado.saludar2(empleado1);
+
+persona1.contadorObjetosPersona;
+
+console.log(persona1.email);
+console.log(empleado1.email);
+console.log(Persona.email);
+console.log(Empleado.email);

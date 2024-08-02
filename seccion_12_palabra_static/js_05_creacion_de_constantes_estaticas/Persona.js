@@ -1,10 +1,20 @@
 // Clase Object, Método toString, Sobreescritura y Polimorfismo en JavaScript
-// Parabra Static
 
 class Persona {
+  static contadorPersonas = 0; // Atributo de nuestra clase
+
+  static get MAX_OBJ() {
+    return 5;
+  }
+
   constructor(nombre, apellido) {
     this._nombre = nombre;
     this._apellido = apellido;
+    if (Persona.contadorPersonas < Persona.MAX_OBJ) {
+      this.idPersona = ++Persona.contadorPersonas;
+    } else {
+      console.log("Se han superado el máximo de objetos permitidos");
+    }
   }
 
   get nombre() {
@@ -24,7 +34,7 @@ class Persona {
   }
 
   nombreCompleto() {
-    return this._nombre + " " + this._apellido;
+    return this.idPersona + ": " + this._nombre + " " + this._apellido;
   }
   // Sobreescritura el  método de la clase Padre (Object)
   toString() {
@@ -67,13 +77,18 @@ let persona1 = new Persona("Juan", "Perez");
 console.log(persona1.toString()); // Get nombre
 
 let empleado1 = new Empleado("Maria", "Jimenez", "Sistema");
-console.log(empleado1);
-console.log(empleado1.nombreCompleto());
 console.log(empleado1.toString());
 
-// persona1.saludar(); // No es posible llamar un método static desde un objeto
-Persona.saludar();
-Persona.saludar2(persona1);
+console.log(Persona.toString());
 
-Empleado.saludar();
-Empleado.saludar2(empleado1);
+let persona2 = new Persona("Karla", "Ramirez");
+console.log(persona2.toString());
+console.log(Persona.contadorPersonas);
+
+console.log(Persona.MAX_OBJ);
+Persona.MAX_OBJ = 10;
+console.log(Persona.MAX_OBJ);
+
+let persona3 = new Persona("Mariano", "Lara");
+let persona4 = new Persona("Armando", "Toledo");
+let persona5 = new Persona("Luara", "Toro");
