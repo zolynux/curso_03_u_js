@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Ejemplo DOM con JavaScript</title>
+  </head>
+  <body>
+    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo">Saludo!</p>
+    <script>
+      let cabecero = document.getElementById("cabecero");
+      console.log("Valor cabecero: " + cabecero.innerHTML);
+
+      let parrafo = document.getElementById("parrafo");
+      console.log("Valor Parrafo: " + parrafo.innerHTML);
+      console.log("Saludo desde JavaScript");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Manejo DOM con JavaScript</title>
+  </head>
+  <body>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br />
+    <img
+      src="http://globalmentoring.com.mx/imagenes/javascript.png"
+      id="imagen"
+      alt="logo-js"
+    />
+    <script>
+      const mostrar = () => {
+        document.getElementById("imagen").src =
+          "http://globalmentoring.com.mx/imagenes/html5.png";
+      };
+    </script>
+  </body>
+</html>
