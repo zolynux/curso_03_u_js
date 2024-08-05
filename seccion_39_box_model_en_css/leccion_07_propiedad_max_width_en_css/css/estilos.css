@@ -1,0 +1,18 @@
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+
+h1 {
+	text-align: center;
+	color: crimson;
+}
+
+div {
+	padding: 10px 15px 5px 3px;
+	border: 1px solid powderblue;
+	margin: 0px;
+	background-color: aquamarine;
+	max-width: 100%;
+	box-sizing: border-box;
+}

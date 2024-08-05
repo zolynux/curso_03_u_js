@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+	color: crimson;
+}
+
+/* 
+	* Tipos de posicionamiento:
+	- static
+	- relative
+	- fixed
+	-absolute
+	- sticky
+*/
+div {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	border: 3px solid firebrick;
+}

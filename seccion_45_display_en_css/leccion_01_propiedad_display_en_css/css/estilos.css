@@ -1,0 +1,16 @@
+h1,
+div,
+p {
+	border: 3px solid blueviolet;
+	text-align: center;
+	color: cornflowerblue;
+	padding: 10px;
+	/* Default is 'block' */
+	display: block;
+	/* display: inline; */
+}
+
+span {
+	display: inline;
+	border: 1px solid blue;
+}

@@ -1,0 +1,10 @@
+h1 {
+	text-align: center;
+	color: crimson;
+}
+
+div {
+	padding: 10px;
+	border: 15px solid powderblue;
+	margin: 20px;
+}

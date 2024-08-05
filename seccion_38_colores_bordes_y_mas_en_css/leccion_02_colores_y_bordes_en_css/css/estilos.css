@@ -1,0 +1,20 @@
+h1 {
+	text-align: center;
+}
+
+.rojo {
+	border: 10px solid firebrick;
+	/* background-color: firebrick; */
+}
+
+.rosa {
+	border: 10px dashed hotpink;
+}
+
+.amarillo {
+	border: 10px double gold;
+}
+
+.violeta {
+	border: 10px dotted blueviolet;
+}

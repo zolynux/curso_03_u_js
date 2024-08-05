@@ -1,0 +1,22 @@
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+
+h1 {
+	text-align: center;
+	color: crimson;
+}
+
+div {
+	padding: 10px 15px 5px 3px;
+	border: 1px solid powderblue;
+	margin-left: 100px;
+	background-color: aquamarine;
+	max-width: 300px;
+	box-sizing: border-box;
+}
+
+p.interno {
+	margin-left: inherit
+}
